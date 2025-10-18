@@ -1,11 +1,14 @@
 import React from 'react';
 import logo from "../assets/logo.png";
+import { format } from 'date-fns';
 
 const Header = () => {
     return (
         <div className='flex flex-col justify-center items-center gap-3'>
-            <img src={logo} className='w-[350px]' alt=""/>
-            <p className='text-gray-400'>Journalism Without Fear or Favour</p>
+            <img src={logo} className='w-[400px]' alt=""/>
+            <p className='text-accent'>Journalism Without Fear or Favour</p>
+            
+            <p className='text-semibold text-accent'>{format(new Date(),"EEEE, MMMM dd, yyyy")}</p>
         </div>
     );
 };
