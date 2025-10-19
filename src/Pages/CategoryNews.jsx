@@ -16,8 +16,9 @@ const CategoryNews = () => {
      return ; 
     }
     else if(id=="1"){
-          const filterNews=data.filter(news=>news.other.is_today_pick == true);
-          setcatagoryNews(filterNews)
+          const filterNews=data.filter(news=>news.others.is_today_pick == true);
+          setcatagoryNews(filterNews);
+          return;
    
 
     }
