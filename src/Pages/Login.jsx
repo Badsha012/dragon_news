@@ -17,7 +17,7 @@ const Login = () => {
 
           <button className="btn btn-neutral mt-4">Login</button>
 
-             <p className='text-center '>Dont't Have An Account ? <Link to='/auth/register' className='text-secondary font-semibold'>Register</Link> </p>
+             <p className='text-center pt-5 '>Dont't Have An Account ? <Link to='/auth/register' className='text-secondary font-semibold'>Register</Link> </p>
         </fieldset>
       </div>
       </div>
